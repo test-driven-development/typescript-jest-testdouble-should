@@ -20,6 +20,8 @@ module.exports = {
   },
   modulePaths: ['<rootDir>/src/'],
   preset: 'jest-preset-angular',
+  notify: true,
+  restoreMocks: true,
   roots: ['src'],
   setupTestFrameworkScriptFile: '<rootDir>/src/setup-jest.ts',
   testMatch: ['**/+(*.)+(spec|test).+(ts|js)'],
