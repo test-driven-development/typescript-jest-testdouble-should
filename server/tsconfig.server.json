@@ -1,0 +1,18 @@
+{
+  "verbose": true,
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "../server",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["esnext"],
+    "noEmit": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "strict": true,
+    "target": "esnext"
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["../src/**/*.*/"]
+}
