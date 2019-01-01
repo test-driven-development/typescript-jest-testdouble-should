@@ -14,7 +14,7 @@
     "test:server:watch": "yarn test:server -- --watchAll",
     "test:watch": "yarn test -- --watchAll",
     "tslint": "tslint --project tsconfig.json",
-    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "tslint:check": "tslint-config-prettier-check ./tslint.json",
     "tslint:server": "tslint --project ./server/tsconfig.server.json"
   },
   "private": true,
