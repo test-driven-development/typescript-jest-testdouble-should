@@ -7,8 +7,7 @@ module.exports = {
     "ts-jest": {
       'tsConfigFile': '<rootDir>/src/tsconfig.spec.json',
       'skipBabel': true
-    },
-    "\_\_TRANSFORM_HTML\_\_": true
+    }
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
   moduleNameMapper: {
@@ -26,7 +25,7 @@ module.exports = {
   testMatch: ['**/+(*.)+(spec|test).+(ts|js)'],
   testURL: 'http://localstorage:8080',
   transform: {
-    '^.+\\.(ts|js|html)x?$': '<rootDir>/node_modules/jest-preset-angular/preprocessor.js'
+    '^.+\\.(ts|js)x?$': 'ts-jest'
   },
   transformIgnorePatterns: ['node_modules/(?!(jest-test))'],
 };

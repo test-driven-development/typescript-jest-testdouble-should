@@ -9,6 +9,7 @@ describe('automated test infrastructure', () => {
 })
 
 interface IMyInterface {
+  do(name: string): string
 }
 
 describe('interfaces', () => {
