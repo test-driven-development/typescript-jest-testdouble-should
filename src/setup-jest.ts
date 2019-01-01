@@ -1,4 +1,14 @@
+import 'jest';
 import 'jest-preset-angular';
+import 'should';
+import * as td from 'testdouble';
+import * as tdJest from 'testdouble-jest';
+
+tdJest(td, jest);
+
+afterEach(() => {
+  td.reset();
+})
 
 /* global mocks for jsdom */
 const mock = () => {
