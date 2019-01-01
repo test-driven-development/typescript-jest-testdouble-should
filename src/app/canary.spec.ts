@@ -1,6 +1,6 @@
-import {should} from 'should';
-import * as td from 'testdouble';
-const {when} = td;
+import { should } from 'should'
+import * as td from 'testdouble'
+const { when } = td
 
 describe('automated test infrastructure', () => {
   it(`has a passing canary test`, () => {
@@ -8,18 +8,16 @@ describe('automated test infrastructure', () => {
   })
 })
 
-interface IMyInterface {
+interface MyInterface {
   do(name: string): string
 }
 
 describe('interfaces', () => {
   it(`can have mockito-like test doubles`, () => {
-    const mock = td.object<IMyInterface>('')
+    const mock = td.object<MyInterface>('')
 
-    td.when(mock.do('wil')).thenReturn('Pannell')
+    when(mock.do('wil')).thenReturn('Pannell')
     const lastName = mock.do('wil')
     lastName.should.equal('Pannell')
-  });
-});
-
-
+  })
+})

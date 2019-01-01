@@ -9,7 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "test:watch": "yarn test -- --watchAll",
-    "tdd": "yarn test:watch"
+    "tdd": "yarn test:watch",
+    "tslint": "tslint --project tsconfig.json 'src/app/**/*.*'",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json"
   },
   "private": true,
   "dependencies": {
