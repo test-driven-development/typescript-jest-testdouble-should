@@ -2,14 +2,14 @@
   "name": "angular7-jest-testdouble-should",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "cross-env NODE_ENV=testing jest --forceExit --detectOpenHandles --config ./jest.config.js",
-    "lint": "ng lint",
     "e2e": "ng e2e",
-    "test:watch": "yarn test -- --watchAll",
+    "lint": "ng lint",
+    "ng": "ng",
     "tdd": "yarn test:watch",
+    "test": "cross-env NODE_ENV=testing jest --forceExit --detectOpenHandles --config ./jest.config.js",
+    "test:watch": "yarn test -- --watchAll",
     "tslint": "tslint --project tsconfig.json",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "tslint:server": "tslint --project ./server/tsconfig.server.json"
