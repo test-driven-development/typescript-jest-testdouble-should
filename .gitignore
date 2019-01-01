@@ -3,7 +3,8 @@
 # compiled output
 /dist
 /tmp
-/out-tsc
+/out-tscs
+/.jest-cache
 
 # dependencies
 /node_modules
