@@ -5,8 +5,8 @@ module.exports = {
   coverageReporters: ['json', 'lcov'],
   globals: {
     "ts-jest": {
-      'skipBabel': true,
-      'tsConfigFile': '<rootDir>/src/tsconfig.spec.json',
+      'babelConfig': false,
+      'tsConfig': '<rootDir>/src/tsconfig.spec.json',
     }
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
