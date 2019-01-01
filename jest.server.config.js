@@ -1,7 +1,5 @@
 // https://github.com/thymikee/jest-preset-angular#brief-explanation-of-config
 module.exports = {
-  "notify": true,
-  "restoreMocks": true,
   cacheDirectory: './.jest-cache',
   coverageDirectory: 'coverage',
   coverageReporters: ['json', 'lcov'],
@@ -11,8 +9,10 @@ module.exports = {
       'tsConfig': '<rootDir>/server/tsconfig.server.json',
     }
   },
-  moduleFileExtensions: ['js', 'ts'],
+  moduleFileExtensions: ['ts', 'js'],
   modulePaths: ['<rootDir>/server/'],
+  notify: true,
+  restoreMocks: true,
   roots: ['server'],
   setupTestFrameworkScriptFile: '<rootDir>/server/spec-helper.js',
   testEnvironment: 'node',
