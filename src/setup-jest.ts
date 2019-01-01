@@ -8,7 +8,7 @@ tdJest(td, jest);
 
 afterEach(() => {
   td.reset();
-})
+});
 
 /* global mocks for jsdom */
 const mock = () => {
