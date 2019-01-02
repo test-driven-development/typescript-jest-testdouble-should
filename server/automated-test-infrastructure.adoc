@@ -1,6 +1,6 @@
 = automated test infrastructure
 
-tdd workflow diagram::
+image:./tdd-workflow.jpg[link="tdd workflow diagram::"]
 
 switch from mocha to jest::
 
