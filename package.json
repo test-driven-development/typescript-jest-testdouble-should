@@ -1,12 +1,33 @@
 {
-  "name": "angular7-jest-testdouble-should",
+  "name": "typescript-jest-testdouble-should",
+  "description": "review of core extreme programming competencies",
   "version": "0.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": "11.5.0",
+    "npm": "6.4.1",
+    "yarn": "1.12.3"
+  },
+  "homepage": "https://github.com/test-driven-development/typescript-jest-testdouble-should#README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/test-driven-development/typescript-jest-testdouble-should.git"
+  },
+  "bugs": {
+    "url": "https://github.com/test-driven-development/typescript-jest-testdouble-should/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn format && concurrently \" yarn tslint\" \" yarn tslint:server\" \" yarn test:server\""
+    }
+  },
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
     "e2e": "ng e2e",
     "lint": "ng lint",
     "ng": "ng",
+    "format": "pretty-quick --staged --verbose",
     "tdd": "yarn test:watch",
     "tdd:server": "yarn test:server:watch",
     "test": "cross-env NODE_ENV=testing jest --forceExit --detectOpenHandles --config ./jest.config.js",

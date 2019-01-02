@@ -6,7 +6,7 @@ module.exports = {
   globals: {
     "ts-jest": {
       'babelConfig': false,
-      'tsConfig': '<rootDir>/server/tsconfig.server.json',
+      'tsConfig': '<rootDir>/tsconfig.server.json',
     }
   },
   moduleFileExtensions: ['ts', 'js'],
@@ -14,7 +14,7 @@ module.exports = {
   notify: true,
   restoreMocks: true,
   roots: ['server'],
-  setupTestFrameworkScriptFile: '<rootDir>/server/spec-helper.js',
+  setupTestFrameworkScriptFile: '<rootDir>/server/setup-jest.ts',
   testEnvironment: 'node',
   testMatch: ['**/+(*.)+(spec|test).+(ts|js)'],
   testURL: 'http://localstorage:8080',

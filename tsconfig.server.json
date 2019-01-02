@@ -1,25 +1,28 @@
 {
+  "buildOnSave": false,
+  "compileOnSave": false,
   "compilerOptions": {
     "allowJs": true,
-    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./server",
     "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "lib": ["esnext"],
     "moduleResolution": "node",
     "noEmit": true,
     "noImplicitAny": false,
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "strict": true,
     "suppressImplicitAnyIndexErrors": true,
+    "strict": true,
     "target": "esnext",
+    "types" : [
+      "node",
+      "jest"
+    ],
     "typeRoots": [
       "node_modules/@types"
     ]
   },
-  "include": ["**/*.ts"],
+  "include": ["server"],
   "exclude": ["node_modules"]
 }
