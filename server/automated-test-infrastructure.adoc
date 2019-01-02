@@ -1,0 +1,41 @@
+= automated test infrastructure
+
+{empty} +
+
+tdd workflow diagram::
+
+{empty} +
+
+switch from mocha to jest::
+
+{empty} +
+
+`package.json`::
+
+{empty} +
+
+`tdd:server` script::
+
+{empty} +
+
+launch configuration::
+
+{empty} +
+
+pre-push hook::
+
+{empty} +
+
+developer experience::
+* test suite
+* tests
+* arrange/act/assert
+* red bar
+* error messages
+* assertion messages
+* custom diagnostic messages
+* green bar
+• console output should read like a spec
+
+
+
