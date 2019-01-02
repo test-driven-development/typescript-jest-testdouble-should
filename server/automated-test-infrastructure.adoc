@@ -1,0 +1,85 @@
+= automated test infrastructure
+
+{empty} +
+
+tdd workflow diagram::
+
+{empty} +
+
+switch from mocha to jest::
+{empty} +
+
+switch from javascript to typescript::
+
+{empty} +
+
+`package.json`::
+
+{empty} +
+
+`tdd:server` script::
+
+{empty} +
+
+launch configuration::
+
+{empty} +
+
+pre-push hook::
+
+{empty} +
+
+test infrastructure::
+* test suite
+* design
+* tests
+* arrange/act/assert
+* (given/when/then)
+* compiler error
+* error messages
+* red bar
+* assertion messages
+• custom diagnostic messages
+* green bar
+• lint violations
+• console output is a behavior specification
+• console output should read like a spec
+
+{empty} +
+
+developer experience::
+* tdd is fundamentally about the design of code
+• code coverage/protection from regression/ease of refactoring: side-effects
+• test lists are `design-by-example`
+• examples are concrete
+
+{empty} +
+
+workflow::
+* create an empty test suite
+• the capability/feature/story to build
+• start with a canary test
+• green bar
+• console output
+• compiler error
+• error message
+• red bar
+• assertion message
+* design behavior with a test list
+• design the test list in the behavior spec (`it()` function)
+• inspect the design in the console output
+• `commit`
+* design the `API` in the concrete assertion
+* compiler errors and assertion messages drive the code to write
+• write only enough code to change the error or assertion message
+* green bar for test
+• `commit`
+* 4 rules
+• `commit`
+* green bar for suite
+• `commit`
+
+{empty} +
+
+
+
